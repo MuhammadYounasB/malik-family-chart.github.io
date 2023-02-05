@@ -95,7 +95,10 @@
     </script>
 </head>
 <body>
-
+    <a class="btn zoom"><i class="fas fa-search-plus"></i></a>
+    <a class="btn zoom-out"><i class="fas fa-search-minus"></i></a>
+    <a class="btn zoom-init"><i class="fas fa-recycle"></i></a>
+    
     <div class="container">
         <h1>Malik Family Chart</h1>
         <div id="themes">
@@ -151,4 +154,24 @@
     </div>
 
 </body>
+<script>
+           var zm = 100;
+       var elemin = document.querySelector('.zoom');
+       var elemout = document.querySelector('.zoom-out');
+       var elemdefault = document.querySelector('.zoom-init');
+       elemin.addEventListener("click",function(){
+        zm +=10;
+        document.querySelector("#tree").style.zoom=zm+"%";
+       });
+
+       elemout.addEventListener("click",function(){
+        zm!=10? zm -=10:"";
+        document.querySelector("#tree").style.zoom=zm+"%";
+       });
+		
+       elemdefault.addEventListener("click",function(){
+        zm=100
+        document.querySelector("#tree").style.zoom=zm+"%";
+       });
+</script>
 </html>
