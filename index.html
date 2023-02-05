@@ -81,6 +81,40 @@
                 #set a:hover {
                     border-color: #fff;
                 }
+.btn {
+  width: 30px;
+  height: 30px;
+  background: #FFF;
+  border: 1px solid #005bac;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  color: #005bac;
+  padding: 15px 10px 5px;
+  position: fixed;
+  text-align: center;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+	transition: all 0.3s ease;
+  z-index: 1;
+}
+.btn:hover {
+  background: #eef;
+}
+
+.zoom {
+  bottom: 190px;
+}
+
+.zoom-out {
+  bottom: 120px;
+}
+.zoom-init {
+  bottom: 50px;
+}
     </style>
 
     <script type="text/javascript">
@@ -98,7 +132,7 @@
     <a class="btn zoom"><i class="fas fa-search-plus"></i></a>
     <a class="btn zoom-out"><i class="fas fa-search-minus"></i></a>
     <a class="btn zoom-init"><i class="fas fa-recycle"></i></a>
-    
+
     <div class="container">
         <h1>Malik Family Chart</h1>
         <div id="themes">
