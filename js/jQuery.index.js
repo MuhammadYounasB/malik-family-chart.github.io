@@ -1,7 +1,5 @@
 ﻿/*
-* jHtree Horizontal Animated jQuery Plugin
-* 4/2014
-* By NADy:   @naadydev     naadydev@gmail.com
+* by Muhammad Younas
 */
 (function ($) {
 
@@ -365,32 +363,32 @@
 
         },
 
-        _zoomer: function (treeDiv) {
-            var zmr = '<div class="zmrcntr"><input type="text" id="zmrval" class="zomrval"><div id="zmrslidr" style="height:200px;"></div></div>';
-            $(zmr).insertBefore($(treeDiv));
+        // _zoomer: function (treeDiv) {
+        //     var zmr = '<div class="zmrcntr"><input type="text" id="zmrval" class="zomrval"><div id="zmrslidr" style="height:200px;"></div></div>';
+        //     $(zmr).insertBefore($(treeDiv));
 
-            var brwstp = navigator.userAgent.match(/Mozilla/);
-            $("#zmrslidr").slider({
-                orientation: "vertical",
-                range: "min",
-                min: 10,
-                animate: 'slow',
-                max: 200,
-                value: 100,
-                slide: function (event, ui) {
-                    $("#zmrval").val(ui.value);
-                    if (brwstp == true) {
+        //     var brwstp = navigator.userAgent.match(/Mozilla/);
+        //     $("#zmrslidr").slider({
+        //         orientation: "vertical",
+        //         range: "min",
+        //         min: 10,
+        //         animate: 'slow',
+        //         max: 200,
+        //         value: 100,
+        //         slide: function (event, ui) {
+        //             $("#zmrval").val(ui.value);
+        //             if (brwstp == true) {
 
-                        $('.tree').css('MozTransform', 'scale(' + ui.value + ')');
-                    } else {
+        //                 $('.tree').css('MozTransform', 'scale(' + ui.value + ')');
+        //             } else {
 
-                        $('.tree').css('zoom', ' ' + ui.value + '%');
-                    }
-                }
-            });
-            $("#zmrval").val($("#zmrslidr").slider("value"));
+        //                 $('.tree').css('zoom', ' ' + ui.value + '%');
+        //             }
+        //         }
+        //     });
+        //     $("#zmrval").val($("#zmrslidr").slider("value"));
 
-        }
+        // }
 
     });
 
