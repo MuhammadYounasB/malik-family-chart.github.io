@@ -32,7 +32,7 @@
         /*color: #666;
                 font-family: arial, verdana, tahoma;*/
         /*font-size: 11px;*/
-        display: inline-block;
+        display: inline-table;
         border-radius: 5px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
@@ -138,7 +138,9 @@
     color: #000;
     border: 2px solid #94a0b4;
 }
-
+li#aa{
+    width:max-content;
+}
 .tnode {
 }
 
@@ -148,6 +150,9 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
 }
 
 .node-head-img{
