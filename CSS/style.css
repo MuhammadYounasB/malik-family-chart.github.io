@@ -75,8 +75,8 @@
     position: absolute;
     top: 0;
     left: 50%;
-    border-top: 1px solid #ccc;
-    border-left: 1px solid #ccc;
+    border-top: 3px solid red;
+    border-left: 3px solid red;
     width: 50%;
     height: 20px;
 }
@@ -89,7 +89,7 @@
     right: 50%;
     /*left: 50%;*/
     /*right: auto;*/
-    border-top: 1px solid #ccc;
+    border-top: 3px solid red;
     width: 50%;
     height: 20px;
 }
@@ -99,7 +99,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    border-left: 1px solid #ccc;
+    border-left: 3px solid red;
     height: 20px;
 }
 
@@ -141,8 +141,7 @@
 li#aa{
     width:max-content;
 }
-.tnode {
-}
+
 
 /*---- For Animation when change to other Class ----------*/
 .ui-widget-content {
