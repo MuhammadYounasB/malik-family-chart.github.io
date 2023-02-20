@@ -170,3 +170,12 @@ li#aa{
     float: left;
     width: 40px;
 }
+
+
+/* CSS for Mobile */
+
+@media screen and (max-width:768px) {
+    .tree{
+        zoom:1%;
+    }
+}
