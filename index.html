@@ -116,6 +116,10 @@
 .zoom-init {
   top: 50%;
 }
+.tree{
+    zoom:20%;
+    scroll-snap-align: center;
+}
     </style>
 
     <script type="text/javascript">
@@ -130,9 +134,7 @@
     </script>
 </head>
 <body>
-    <a class="btn zoom"><i class="fas fa-search-plus"></i></a>
-    <a class="btn zoom-out"><i class="fas fa-search-minus"></i></a>
-    <a class="btn zoom-init"><i class="fas fa-recycle"></i></a>
+
     <div class="container">
         <h1 style="
         color: white;
@@ -141,6 +143,9 @@
 
 
     <br />
+    <a class="btn zoom"><i class="fas fa-search-plus"></i></a>
+    <a class="btn zoom-out"><i class="fas fa-search-minus"></i></a>
+    <a class="btn zoom-init"><i class="fas fa-recycle"></i></a>
     <div id="tree">
 
     </div>

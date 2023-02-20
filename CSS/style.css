@@ -176,6 +176,6 @@ li#aa{
 
 @media screen and (max-width:768px) {
     .tree{
-        zoom:1%;
+        zoom:10% !important;
     }
 }
